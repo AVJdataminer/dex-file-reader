@@ -1,0 +1,30 @@
+# Include README and license files
+include README.md
+include LICENSE
+include requirements.txt
+include notebook_requirements.txt
+
+# Include example files
+include example_usage.py
+include setup_notebook.py
+
+# Include sample data (optional - you might want to exclude these)
+include *.csv
+include DEX-files/*.log
+
+# Include Jupyter notebooks
+include *.ipynb
+
+# Exclude development and build files
+exclude .git*
+exclude .DS_Store
+exclude __pycache__/
+exclude .ipynb_checkpoints/
+exclude .history/
+exclude *.pyc
+exclude *.pyo
+exclude *.pyd
+exclude .Python
+exclude build/
+exclude dist/
+exclude *.egg-info/
